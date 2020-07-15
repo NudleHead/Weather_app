@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css"
+        integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" crossorigin="anonymous">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+
+        }
+
+
+        body {
+            height: 100vh;
+            background: linear-gradient(#64C7FF, #004156);
+
+            font-family: sans-serif;
+            color: white;
+        }
+
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: auto auto auto;
+        }
+
+        form {
+            grid-column: 1/4;
+            text-align: right;
+            font-size: 40px;
+            padding: 5% 10%;
+        }
+
+        #search {
+
+            background: transparent;
+            border: none;
+            outline: none;
+            border-bottom: 1px solid white;
+            color: white;
+            font-size: 20px;
+        }
+
+
+        .fas.fa-search-location {
+            transform: rotate(90deg);
+            color: white;
+            cursor: pointer;
+
+        }
+
+        .location {
+            grid-column: 1/3;
+            text-align: center;
+        }
+
+        .location h1 {
+            font-size: 50px;
+            line-height: 132px;
+        }
+
+        .icon-section {
+            text-align: left;
+            grid-column: 3/4;
+        }
+
+        /* .icon-section canvas {
+            margin-left: 15%;
+        } */
+
+        .degree-section {
+            padding: 5%;
+            text-align: center;
+            grid-column: 1/4;
+            font-size: 40px;
+        }
+
+        .degree-section span {
+            font-size: 50px;
+        }
+
+        .wind-section {
+            grid-column: 1/2;
+            text-align: right;
+            font-size: 60px;
+            line-height: 132px;
+        }
+
+        .wind-value {
+            grid-column: 2/3;
+            margin-left: 20px;
+            line-height: 132px;
+            font-size: 40px;
+        }
+
+        .temperature-desctription {
+            line-height: 132px;
+            font-size: 40px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="grid-container">
+        <form action="#" autocomplete="off">
+            <input type="search" id="search" placeholder="city name">
+            <i class="fas fa-search-location"></i>
+
+        </form>
+        <div class="location">
+            <h1 class="location-name"></h1>
+        </div>
+        <div class="icon-section">
+            <canvas class="icon" width="128" height="128"></canvas></div>
+        <div class="degree-section">
+            <h2 class="degree"></h2>
+        </div>
+        <div class="wind-section">
+            <i class="fas fa-wind"></i>
+        </div>
+        <div class="wind-value"></div>
+        <div class="temperature-desctription"></div>
+    </div>
+
+    </div>
+    <script src="js/skycons.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/jquery.js"></script>
+</body>
+
+</html>
