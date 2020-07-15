@@ -58,7 +58,7 @@ function connectWithApi(api) {
 function getCityName() {
 
     let cityValue = cityName.value;
-    const apiCity = `http://api.openweathermap.org/data/2.5/weather?q=${cityValue}&units=metric&APPID=${key}`;
+    const apiCity = `https://api.openweathermap.org/data/2.5/weather?q=${cityValue}&units=metric&APPID=${key}`;
     connectWithApi(apiCity);
 
 }
