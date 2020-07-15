@@ -3,7 +3,7 @@ function getLocation() {
         navigator.geolocation.getCurrentPosition(position => {
             let long = position.coords.longitude;
             let lat = position.coords.latitude;
-            const api = `http://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${long}&units=metric&APPID=${key}`;
+            const api = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${long}&units=metric&APPID=${key}`;
             connectWithApi(api);
         })
     } else {
